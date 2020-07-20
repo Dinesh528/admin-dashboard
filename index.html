@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand logo" href="#"><strong>Logo</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Managed CMS/FQA Pages </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Transactions</a>
+                </li>
+                <img class="avatar" alt="Jhon Doe" src="avatar.png" />
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg-right pb-2" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Jhon Doe</button>
+                        <button class="dropdown-item" type="button">Admin</button>
+                        <button class="dropdown-item" type="button">Sign Out</button>
+                    </div>
+                </div>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container space">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card gap">
+                    <div class="counter">
+                        <div class="users">
+                            <h4 class="text-center">No.Of New users this month: 528</h4>
+                            <h4></h4>
+                            <p class="counter-count">
+                                Total Users
+                                1080
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card gap">
+                    <div class="counter pt-4 ">
+                        <h3 class="text-center">User Profile</h3><br>
+                        <ul class="p-3 text-center">
+                            <li>
+                                Number Of Approved Users: 1050
+                            </li>
+
+                            <li>
+                                Number Of Rejected Users: 65
+                            </li>
+
+                            <li>
+                                Number Of Active Users: 998
+                            </li>
+                            <br>
+
+                        </ul>
+                        <p class="p-2 text-center"><strong>Note:</strong> All the information from database,Usefull to
+                            sell all the data at a time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card gap">
+                    <div class="counter">
+                        <script>
+                            window.onload = function () {
+
+                                var chart = new CanvasJS.Chart("chartContainer", {
+                                    animationEnabled: true,
+                                    title: {
+                                        text: "Current Conversion Rate"
+                                    },
+                                    data: [{
+                                        type: "pie",
+                                        startAngle: 240,
+                                        yValueFormatString: "##.\" users\"",
+                                        indexLabel: "{label}- {y}",
+                                        dataPoints: [
+                                            { y: 350, label: "year-2020" },
+                                            { y: 280, label: "year-2019" },
+                                            { y: 250, label: "year-2018" },
+                                            { y: 210, label: "year-2017" },
+                                        ]
+                                    }]
+                                });
+                                chart.render();
+
+                            }
+                        </script>
+                        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+   
+
+    <div class="container mt-4 admin">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center mb-3">Admin Panel</h1>
+                <div class="icons gap">
+                    <div class="items">
+                        <i class="fa fa-user fa-4x"></i>
+                        <p class="p-2 items">User Details</p>
+                    </div>
+                    <div class="items">
+                        <i class="fa fa-money fa-4x"></i>
+                        <p class="p-2 items">View Balance</p>
+                    </div>
+                    <div class="items">
+                        <i class="fa fa-exchange fa-4x"></i>
+                        <p class="p-2 items">View Recent Transactions</p>
+                    </div>
+                    <div class="items">
+                        <i class="fa fa-user-circle fa-4x"></i>
+                        <p class="p-2 items">Manage KYC/User Profiles</p>
+                    </div>
+                    <div class="items">
+                        <i class="fa fa-plus-circle fa-4x"></i>
+                        <p class="p-2 ">Fee And Others</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="https://use.fontawesome.com/309181fee9.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

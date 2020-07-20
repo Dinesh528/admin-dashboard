@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    padding-left: 100px;
+}
+/* Logo Mobile version */
+@media(max-width:550px){
+    .logo{
+        padding-left:0;
+    }
+}
+.avatar {
+    vertical-align: middle;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  /* Changing Nav Links */
+  a {
+    color: #fff !important;
+    }
+
+  a:hover{
+      color: lightblue !important;
+  }  
+
+  a:active{
+      color: indigo !important;
+  }
+
+  /* Section 1 */
+  .space{
+      margin-top: 20px;
+  }
+  .section1{
+      display: flex;
+      padding: 20px;
+      justify-content: flex-end;
+      
+  }
+
+  @media(max-width:550px){
+      .section1{
+          display: flex;
+          flex-direction: column;
+      }
+  }
+  
+  /* counter */
+  .counter
+  {
+      background-color: #eaecf0;
+      
+  }
+  .users
+  {
+     padding: 25px;
+  }
+  .counter-count
+  {
+      margin: auto;
+      font-size: 30px;
+      background-color: #00b3e7;
+      border-radius: 50%;
+      position: relative;
+      color: #ffffff;
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      padding-top:50px ;
+     
+  }
+  
+  .employee-p,.customer-p,.order-p,.design-p
+  {
+      font-size: 24px;
+      color: #000000;
+      line-height: 34px;
+  }
+
+  .gap{
+    margin: 6px;
+   
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .card1{
+      height: 350;
+      width: 300;
+  }
+
+  /* Admin Panel */
+  .admin{
+      border: 1px solid black;
+      margin-bottom: 20px;
+  }
+  .icons{
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+  }
+  /* icons for mobile version */
+  @media(max-width:550px){
+      .icons{
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+      }
+  }
+
+  .items{
+      flex-direction: column;
+  }
+  
